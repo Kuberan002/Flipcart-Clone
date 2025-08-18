@@ -5,468 +5,331 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Shopping</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container-one">
-        <div class="logo">
-            <img src="./images/logo-img.jpeg" class="logo-img">
-        </div>
-        <div class="logo__inputbox">
-            <input type="text" placeholder="Search for Products, Brands and More">
-        </div>
-        <div class="login">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" width="24" height="24">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-            </svg>
-            <p>Login</p>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" width="24" height="24">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-            </svg>
-            <p>Cart</p>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" width="24" height="24">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
-            </svg>
-            <p>Become a Seller</p>
-        </div>
-    </div>
-    <div class="items">
-        <div class="items__list">
-            <img src="./images/item1.webp" alt="img1">
-            <p>Minutes</p>
-        </div>
-        <div class="items__list">
-            <img src="./images/item2.webp" alt="img1">
-            <p>Minutes</p>
-        </div>
-        <div class="items__list">
-            <img src="./images/item3.webp" alt="img1">
-            <p>Minutes</p>
-        </div>
-        <div class="items__list">
-            <img src="./images/item4.webp" alt="img1">
-            <p>Minutes</p>
-        </div>
-        <div class="items__list">
-            <img src="./images/item5.webp" alt="img1">
-            <p>Minutes</p>
-        </div>
-        <div class="items__list">
-            <img src="./images/item6.webp" alt="img1">
-            <p>Minutes</p>
-        </div>
-        <div class="items__list">
-            <img src="./images/item7.webp" alt="img1">
-            <p>Minutes</p>
-        </div>
-        <div class="items__list">
-            <img src="./images/item8.webp" alt="img1">
-            <p>Minutes</p>
-        </div>
-        <div class="items__list">
-            <img src="./images/item9.webp" alt="img1">
-            <p>Minutes</p>
-        </div>
-        <div class="items__list">
-            <img src="./images/item10.webp" alt="img1">
-            <p>Minutes</p>
-        </div>
-        <div class="items__list">
-            <img src="./images/item11.webp" alt="img1">
-            <p>Minutes</p>
-        </div>
-    </div>
-    <div class="banner-img">
-        <img src="./images/banner-img.webp" alt="banner-img">
-    </div>
-    <div class="mobiles">
-        <h1 class="font-bold text-3xl pt-4">Best Deals On SmartPhones</h1>
-        <div class="mobile p-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-            <div>
-                <img src="./images/phone-1.webp" alt="Vivo T4 x 5G smartphone" class="p-3">
-                <div class="product-info">
-                    <p class="padding">Vivo T4 x 5G</p>
-                    <p class="padding">From 13,499*</p>
+    <header>
+        <div class="container-one">
+            <div class="flex-items">
+                <img src="./images/logo-img.jpeg" alt="Flipkart Logo" class="logo-img">
+                <div class="logo__inputbox">
+                    <input type="text" placeholder="Search for Products, Brands and More">
+                    <svg class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
                 </div>
             </div>
-            <div>
-                <img src="./images/phone-2.webp" alt="Moto G84 5G smartphone" class="p-3">
-                <div class="product-info">
-                    <p class="padding">Moto G84 5G</p>
-                    <p class="padding">From 17,999*</p>
-                </div>
-            </div>
-            <div>
-                <img src="./images/phone-3.webp" alt="Vivo T4 x 5G smartphone, different color" class="p-3">
-                <div class="product-info">
-                    <p class="padding">Vivo T4 x 5G</p>
-                    <p class="padding">From 13,499*</p>
-                </div>
-            </div>
-            <div>
-                <img src="./images/phone-4.webp" alt="Oppo K13 5G smartphone" class="p-3">
-                <div class="product-info">
-                    <p class="padding">Oppo K13 5G</p>
-                    <p class="padding">From 13,499*</p>
-                </div>
-            </div>
-            <div>
-                <img src="./images/phone-5.webp" alt="Moto G84 5G smartphone, different color" class="p-3">
-                <div class="product-info">
-                    <p class="padding">Moto G84 5G</p>
-                    <p class="padding">From 17,999*</p>
-                </div>
-            </div>
-            <div>
-                <img src="./images/phone-6.webp" alt="Galaxy S24 FE smartphone" class="p-3">
-                <div class="product-info">
-                    <p class="padding">Galaxy S24 FE</p>
-                    <p class="padding-one">From 59,999*</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Home-->
-    <div class="home">
-        <h1 class="font-bold text-3xl p-4">Home</h1>
-    </div>
 
-    <div class="home-products p-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-        <div class="product-card">
-            <img src="./images/home-img1.webp" alt="Ceiling Lamp" class="product-image">
-            <div class="product-info">
-                <h4 class="product-title">Ceiling Lamp</h4>
-                <p class="product-deal">Min. 50% off</p>
+            <nav>
+                <a href="#" class="login">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span>Login</span>
+                </a>
+                <a href="#" class="login">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                    </svg>
+                    <span>Cart</span>
+                </a>
+                <a href="#" class="login">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72l1.189-1.19A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72M6.75 18h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .414.336.75.75.75z" />
+                    </svg>
+                    <span>Become a Seller</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="items">
+            <div class="items__list">
+                <img src="./images/item1.webp" alt="Top Offers">
+                <p>Top Offers</p>
+            </div>
+            <div class="items__list">
+                <img src="./images/item2.webp" alt="Mobiles">
+                <p>Mobiles</p>
+            </div>
+            <div class="items__list">
+                <img src="./images/item3.webp" alt="Electronics">
+                <p>Electronics</p>
+            </div>
+            <div class="items__list">
+                <img src="./images/item4.webp" alt="Appliances">
+                <p>Appliances</p>
+            </div>
+            <div class="items__list">
+                <img src="./images/item5.webp" alt="Fashion">
+                <p>Fashion</p>
+            </div>
+            <div class="items__list">
+                <img src="./images/item6.webp" alt="Beauty">
+                <p>Beauty</p>
+            </div>
+            <div class="items__list">
+                <img src="./images/item7.webp" alt="Home">
+                <p>Home</p>
+            </div>
+            <div class="items__list">
+                <img src="./images/item8.webp" alt="Sports">
+                <p>Sports</p>
+            </div>
+            <div class="items__list">
+                <img src="./images/item9.webp" alt="Flights">
+                <p>Flights</p>
+            </div>
+            <div class="items__list">
+                <img src="./images/item10.webp" alt="Grocery">
+                <p>Grocery</p>
+            </div>
+            <div class="items__list">
+                <img src="./images/item11.webp" alt="Grocery">
+                <p>Grocery</p>
             </div>
         </div>
 
-        <div class="product-card">
-            <img src="./images/home-img2.webp" alt="Ceiling Lamp" class="product-image">
-            <div class="product-info">
-                <h4 class="product-title">Ceiling Lamp</h4>
-                <p class="product-deal">Min. 50% off</p>
+        <div class="image-section banner-img">
+            <img src="./images/banner-img.webp" alt="banner-img">
+        </div>
+
+        <div class="product-section">
+            <div class="section-header">
+                <h2 class="title">Best Deals On SmartPhones</h2>
+                <span class="view-all">➔</span>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="./images/phone-1.webp" alt="Vivo T4 x 5G smartphone" class="product-card-img">
+                    <p class="product-title">Vivo T4 x 5G</p>
+                    <p class="product-price">From ₹13,499</p>
+                </div>
+                <div class="product-card">
+                    <img src="./images/phone-2.webp" alt="Moto G84 5G smartphone" class="product-card-img">
+                    <p class="product-title">Moto G84 5G</p>
+                    <p class="product-price">From ₹17,999</p>
+                </div>
+                <div class="product-card">
+                    <img src="./images/phone-3.webp" alt="Vivo T4 x 5G smartphone, different color" class="product-card-img">
+                    <p class="product-title">Vivo T4 x 5G</p>
+                    <p class="product-price">From ₹13,499</p>
+                </div>
+                <div class="product-card">
+                    <img src="./images/phone-4.webp" alt="Oppo K13 5G smartphone" class="product-card-img">
+                    <p class="product-title">Oppo K13 5G</p>
+                    <p class="product-price">From ₹13,499</p>
+                </div>
+                <div class="product-card">
+                    <img src="./images/phone-5.webp" alt="Moto G84 5G smartphone, different color" class="product-card-img">
+                    <p class="product-title">Moto G84 5G</p>
+                    <p class="product-price">From ₹17,999</p>
+                </div>
+                <div class="product-card">
+                    <img src="./images/phone-6.webp" alt="Galaxy S24 FE smartphone" class="product-card-img">
+                    <p class="product-title">Galaxy S24 FE</p>
+                    <p class="product-price">From ₹59,999</p>
+                </div>
             </div>
         </div>
-        <div class="product-card">
-            <img src="./images/home-img3.webp" alt="Ceiling Lamp" class="product-image">
-            <div class="product-info">
-                <h4 class="product-title">Ceiling Lamp</h4>
-                <p class="product-deal">Min. 50% off</p>
-            </div>
-        </div>
-        <div class="product-card">
-            <img src="./images/home-img4.webp" alt="Ceiling Lamp" class="product-image">
-            <div class="product-info">
-                <h4 class="product-title">Ceiling Lamp</h4>
-                <p class="product-deal">Min. 50% off</p>
-            </div>
-        </div>
-        <div class="product-card">
-            <img src="./images/home-img5.webp" alt="Ceiling Lamp" class="product-image">
-            <div class="product-info">
-                <h4 class="product-title">Ceiling Lamp</h4>
-                <p class="product-deal">Min. 50% off</p>
-            </div>
-        </div>
-        <div class="product-card">
-            <img src="./images/home-img6.webp" alt="Ceiling Lamp" class="product-image">
-            <div class="product-info">
-                <h4 class="product-title">Ceiling Lamp</h4>
-                <p class="product-deal">Min. 50% off</p>
-            </div>
-        </div>
-    </div>
-    <!--Image Section-->
-    <div class="image-section p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        <div>
+
+        <div class="image-section image-grid-four">
             <img src="./images/image-section-img1.webp" alt="image1">
-        </div>
-        <div>
             <img src="./images/image-section-img2.webp" alt="image1">
-        </div>
-        <div>
             <img src="images/image-section-img-3.webp" alt="image1">
-        </div>
-        <div>
             <img src="./images/image-section-img4.webp" alt="image1">
         </div>
-    </div>
-    <div class="image-section-two gap-3 p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
-        <div>
-            <img src="./images/image-section2.webp">
-        </div>
-        <div>
-            <img src="./images/image-section2-two.webp">
-        </div>
-        <div>
-            <img src="./images/image-section2-three.webp">
-        </div>
-    </div>
 
-    <!--Feautured Brands-->
-    <div class="feautured-brands gap-4 p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
-        <div>
+        <div class="image-section image-grid-three">
+            <img src="./images/image-section2.webp" alt="image1">
+            <img src="./images/image-section2-two.webp" alt="image1">
+            <img src="./images/image-section2-three.webp" alt="image1">
+        </div>
+
+        <div class="image-section image-grid-three">
             <img src="./images/feautured-img1.webp" alt="image1">
-        </div>
-        <div>
             <img src="./images/feautured-img2.webp" alt="image1">
-        </div>
-        <div>
             <img src="./images/feautured-img3.webp" alt="image1">
         </div>
-    </div>
-    <!--categories-->
 
-    <body class="p-4">
-        <div
-            class="main-container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_2fr_1.2fr] gap-4">
-            <!-- Section 1 -->
-            <div class="category-section bg-white rounded-lg border border-gray-200 overflow-hidden">
-                <div class="section-header flex justify-between items-center p-4 border-b border-gray-200">
-                    <h2 class="text-xl font-bold">Make your home stylish</h2>
-                    <span class="text-2xl text-blue-500 cursor-pointer">➔</span>
+        <div class="product-section categories">
+            <div class="category-block">
+                <div class="section-header">
+                    <h2 class="title">Make your home stylish</h2>
+                    <span class="view-all">➔</span>
                 </div>
-                <div class="product-grid grid grid-cols-2 gap-4 p-4">
-                    <div
-                        class="product-item text-center p-2 border border-gray-100 rounded-lg bg-white transition-all duration-150 ease-in-out hover:shadow-md hover:-translate-y-0.5">
-                        <div
-                            class="thumb aspect-square flex items-center justify-center bg-white border border-gray-200 rounded-lg overflow-hidden mb-2">
-                            <img class="max-w-[90%] max-h-[90%]" src="./images/categories-img1.webp" alt="Shoe Rack" />
-                        </div>
-                        <h3 class="text-base font-semibold truncate">Shoe Rack</h3>
-                        <p class="text-sm text-green-600 font-medium">Min. 50% Off</p>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <img src="./images/categories-img1.webp" alt="Shoe Rack" />
+                        <h3 class="category-title">Shoe Rack</h3>
+                        <p class="category-offer">Min. 50% Off</p>
                     </div>
-                    <div
-                        class="product-item text-center p-2 border border-gray-100 rounded-lg bg-white transition-all duration-150 ease-in-out hover:shadow-md hover:-translate-y-0.5">
-                        <div
-                            class="thumb aspect-square flex items-center justify-center bg-white border border-gray-200 rounded-lg overflow-hidden mb-2">
-                            <img class="max-w-[90%] max-h-[90%]" src="./images/categories-img2.webp"
-                                alt="Home Temple" />
-                        </div>
-                        <h3 class="text-base font-semibold truncate">Home Temple</h3>
-                        <p class="text-sm text-green-600 font-medium">Min. 50% Off</p>
+                    <div class="category-card">
+                        <img src="./images/categories-img2.webp" alt="Home Temple" />
+                        <h3 class="category-title">Home Temple</h3>
+                        <p class="category-offer">Min. 50% Off</p>
                     </div>
-                    <div
-                        class="product-item text-center p-2 border border-gray-100 rounded-lg bg-white transition-all duration-150 ease-in-out hover:shadow-md hover:-translate-y-0.5">
-                        <div
-                            class="thumb aspect-square flex items-center justify-center bg-white border border-gray-200 rounded-lg overflow-hidden mb-2">
-                            <img class="max-w-[90%] max-h-[90%]" src="./images/categories-img3.webp" alt="Beds" />
-                        </div>
-                        <h3 class="text-base font-semibold truncate">Beds</h3>
-                        <p class="text-sm text-green-600 font-medium">Min. 50% Off</p>
+                    <div class="category-card">
+                        <img src="./images/categories-img3.webp" alt="Beds" />
+                        <h3 class="category-title">Beds</h3>
+                        <p class="category-offer">Min. 50% Off</p>
                     </div>
-                    <div
-                        class="product-item text-center p-2 border border-gray-100 rounded-lg bg-white transition-all duration-150 ease-in-out hover:shadow-md hover:-translate-y-0.5">
-                        <div
-                            class="thumb aspect-square flex items-center justify-center bg-white border border-gray-200 rounded-lg overflow-hidden mb-2">
-                            <img class="max-w-[90%] max-h-[90%]" src="./images/categories-img4.webp"
-                                alt="Portable Laptop Tables" />
-                        </div>
-                        <h3 class="text-base font-semibold truncate">Portable Laptop Tables</h3>
-                        <p class="text-sm text-green-600 font-medium">Min. 50% Off</p>
+                    <div class="category-card">
+                        <img src="./images/categories-img4.webp" alt="Portable Laptop Tables" />
+                        <h3 class="category-title">Portable Laptop Tables</h3>
+                        <p class="category-offer">Min. 50% Off</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Section 2 -->
-            <div class="category-section bg-white rounded-lg border border-gray-200 overflow-hidden">
-                <div class="section-header flex justify-between items-center p-4 border-b border-gray-200">
-                    <h2 class="text-xl font-bold">Fashion's Top Deals</h2>
-                    <span class="text-2xl text-blue-500 cursor-pointer">➔</span>
+            <div class="category-block">
+                <div class="section-header">
+                    <h2 class="title">Fashion's Top Deals</h2>
+                    <span class="view-all">➔</span>
                 </div>
-                <div class="product-grid grid grid-cols-2 gap-4 p-4">
-                    <div
-                        class="product-item text-center p-2 border border-gray-100 rounded-lg bg-white transition-all duration-150 ease-in-out hover:shadow-md hover:-translate-y-0.5">
-                        <div
-                            class="thumb aspect-square flex items-center justify-center bg-white border border-gray-200 rounded-lg overflow-hidden mb-2">
-                            <img class="max-w-[90%] max-h-[90%]" src="./images/fashion-img1.webp"
-                                alt="Men's Slippers & Flip Flops" />
-                        </div>
-                        <h3 class="text-base font-semibold truncate">Men's Slippers & Flip Flops</h3>
-                        <p class="text-sm text-green-600 font-medium">Min. 70% Off</p>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <img src="./images/fashion-img1.webp" alt="Men's Slippers & Flip Flops" />
+                        <h3 class="category-title">Men's Slippers & Flip Flops</h3>
+                        <p class="category-offer">Min. 70% Off</p>
                     </div>
-                    <div
-                        class="product-item text-center p-2 border border-gray-100 rounded-lg bg-white transition-all duration-150 ease-in-out hover:shadow-md hover:-translate-y-0.5">
-                        <div
-                            class="thumb aspect-square flex items-center justify-center bg-white border border-gray-200 rounded-lg overflow-hidden mb-2">
-                            <img class="max-w-[90%] max-h-[90%]" src="./images/fashion-img2.webp" alt="Wrist Watches" />
-                        </div>
-                        <h3 class="text-base font-semibold truncate">Wrist Watches</h3>
-                        <p class="text-sm text-green-600 font-medium">Min. 90% Off</p>
+                    <div class="category-card">
+                        <img src="./images/fashion-img2.webp" alt="Wrist Watches" />
+                        <h3 class="category-title">Wrist Watches</h3>
+                        <p class="category-offer">Min. 90% Off</p>
                     </div>
-                    <div
-                        class="product-item text-center p-2 border border-gray-100 rounded-lg bg-white transition-all duration-150 ease-in-out hover:shadow-md hover:-translate-y-0.5">
-                        <div
-                            class="thumb aspect-square flex items-center justify-center bg-white border border-gray-200 rounded-lg overflow-hidden mb-2">
-                            <img class="max-w-[90%] max-h-[90%]" src="./images/fashion-img3.webp"
-                                alt="Men's Casual Shoes" />
-                        </div>
-                        <h3 class="text-base font-semibold truncate">Men's Casual Shoes</h3>
-                        <p class="text-sm text-green-600 font-medium">Min. 70% Off</p>
+                    <div class="category-card">
+                        <img src="./images/fashion-img3.webp" alt="Men's Casual Shoes" />
+                        <h3 class="category-title">Men's Casual Shoes</h3>
+                        <p class="category-offer">Min. 70% Off</p>
                     </div>
-                    <div
-                        class="product-item text-center p-2 border border-gray-100 rounded-lg bg-white transition-all duration-150 ease-in-out hover:shadow-md hover:-translate-y-0.5">
-                        <div
-                            class="thumb aspect-square flex items-center justify-center bg-white border border-gray-200 rounded-lg overflow-hidden mb-2">
-                            <img class="max-w-[90%] max-h-[90%]" src="./images/fashion-img4.webp"
-                                alt="Men's T-shirts" />
-                        </div>
-                        <h3 class="text-base font-semibold truncate">Men's T-shirts</h3>
-                        <p class="text-sm text-green-600 font-medium">In Focus Now</p>
+                    <div class="category-card">
+                        <img src="./images/fashion-img4.webp" alt="Men's T-shirts" />
+                        <h3 class="category-title">Men's T-shirts</h3>
+                        <p class="category-offer">In Focus Now</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Banner -->
-            <div class="banner-img rounded-lg overflow-hidden lg:h-full">
-                <img class="w-full h-full object-cover" src="./images/banner-image.webp" alt="Fashion Banner" />
+            <div class="banner-image">
+                <img src="./images/banner-image.webp" alt="Fashion Banner" />
             </div>
         </div>
-        <!---Book Flights Section-->
-        <div class="flight-booking">
+
+        <div class="image-section flight-image">
             <img src="./images/flight-image.webp" alt="flightimage">
         </div>
-        <!----Offers-->
-        <div class="image-section p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-            <div>
-                <img src="./images/offerimg-1.webp" alt="image1">
-            </div>
-            <div>
-                <img src="./images/offerimg-2.webp" alt="image1">
-            </div>
-            <div>
-                <img src="./images/offerimg-3.webp" alt="image1">
-            </div>
-            <div>
-                <img src="./images/offerimg-4.webp" alt="image1">
-            </div>
+
+        <div class="image-section image-grid-four">
+            <img src="./images/offerimg-1.webp" alt="image1">
+            <img src="./images/offerimg-2.webp" alt="image1">
+            <img src="./images/offerimg-3.webp" alt="image1">
+            <img src="./images/offerimg-4.webp" alt="image1">
         </div>
-        <div class="image-section-two gap-3 p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
-            <div>
-                <img src="./images/offerimg-5.webp">
-            </div>
-            <div>
-                <img src="./images/offerimg-6.webp">
-            </div>
-            <div>
-                <img src="./images/offerimg-7.webp" alt="img7">
-            </div>
+
+        <div class="image-section image-grid-three">
+            <img src="./images/offerimg-5.webp" alt="image1">
+            <img src="./images/offerimg-6.webp" alt="image1">
+            <img src="./images/offerimg-7.webp" alt="image1">
         </div>
-        <!---Furniture-->
-        <div>
-            <h1 class="font-bold text-3xl pt-3 pb-5">Furniture</h1>
-        </div>
-        <div class="furniture grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-            <div class="furniture__images">
-                <img src="./images/fur-1.webp" alt="images">
+
+        <div class="product-section furniture">
+            <div class="section-header">
+                <h2 class="title">Furniture</h2>
+                <span class="view-all">➔</span>
             </div>
-            <div class="furniture__images">
-                <img src="./images/fur-2.webp" alt="images">
-            </div>
-            <div class="furniture__images">
-                <img src="./images/fur-3.webp" alt="images">
-            </div>
-            <div class="furniture__images">
-                <img src="./images/fur-4.webp" alt="images">
-            </div>
-            <div class="furniture__images">
-                <img src="./images/fur-5.webp" alt="images">
-            </div>
-            <div class="furniture__images">
-                <img src="./images/fur-6.webp" alt="images">
-            </div>
-        </div>
-        <!--Items-->
-        <div class="flex">
-            <div class="bluebanner-images p-2 pt-10 flex flex-col md:flex-row gap-5 justify-between">
-                <div class="bluebanner-images__images">
-                    <img src="./images/blue-img1.webp" alt="images">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="./images/fur-1.webp" alt="images" class="product-card-img">
                 </div>
-                <div class="bluebanner-images__images">
-                    <img src="./images/blue-img2.webp" alt="images">
+                <div class="product-card">
+                    <img src="./images/fur-2.webp" alt="images" class="product-card-img">
                 </div>
-                <div class="bluebanner-images__images">
-                    <img src="./images/blue-img3.webp" alt="images">
+                <div class="product-card">
+                    <img src="./images/fur-3.webp" alt="images" class="product-card-img">
+                </div>
+                <div class="product-card">
+                    <img src="./images/fur-4.webp" alt="images" class="product-card-img">
+                </div>
+                <div class="product-card">
+                    <img src="./images/fur-5.webp" alt="images" class="product-card-img">
+                </div>
+                <div class="product-card">
+                    <img src="./images/fur-6.webp" alt="images" class="product-card-img">
                 </div>
             </div>
         </div>
-        <!--Feautured-Brands-->
-        <div class="flex">
-            <div class="feautured-images flex flex-col md:flex-row p-2 gap-5 justify-between pt-10">
-                <div class="feautured-images__images">
-                    <img src="./images/brand-img1.webp" alt="images">
-                </div>
-                <div class="feautured-images__images">
-                    <img src="./images/brand-img2.webp" alt="images">
-                </div>
-                <div class="feautured-images__images">
-                    <img src="./images/brand-img3.webp" alt="images">
-                </div>
+
+        <div class="image-section image-grid-three">
+            <img src="./images/blue-img1.webp" alt="images">
+            <img src="./images/blue-img2.webp" alt="images">
+            <img src="./images/blue-img3.webp" alt="images">
+        </div>
+
+        <div class="image-section image-grid-three">
+            <img src="./images/brand-img1.webp" alt="images">
+            <img src="./images/brand-img2.webp" alt="images">
+            <img src="./images/brand-img3.webp" alt="images">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-column">
+                <h3>ABOUT</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Flipkart Stories</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>HELP</h3>
+                <ul>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>CONSUMER POLICY</h3>
+                <ul>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SOCIAL</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
             </div>
         </div>
-        <!-- Footer -->
-<div class="w-full bg-black text-white pt-10">
-  <div class="max-w-screen-xl mx-auto px-10 flex gap-10 flex-wrap">
-    <div class="companies p-3">
-      <p class="pb-3 font-semibold">ABOUT</p>
-      <ul>
-        <li>Contact Us</li>
-        <li>About Us</li>
-        <li>Careers</li>
-        <li>Flipkart Stories</li>
-        <li>Press</li>
-        <li>Corporate Information</li>
-      </ul>
-    </div>
-
-    <div class="help p-3">
-      <p class="pb-3 font-semibold">HELP</p>
-      <ul>
-        <li>Myntra</li>
-        <li>Cleartrip</li>
-        <li>Shopsy</li>
-      </ul>
-    </div>
-
-    <div class="payments p-3">
-      <p class="pb-3 font-semibold">GROUP COMPANIES</p>
-      <ul>
-        <li>Payments</li>
-        <li>Shipping</li>
-        <li>Cancellation & Returns</li>
-        <li>FAQ</li>
-      </ul>
-    </div>
-
-    <div class="consumer p-3">
-      <p class="pb-3 font-semibold">CONSUMER POLICY</p>
-      <ul>
-        <li>Cancellation & Returns</li>
-        <li>Terms of use</li>
-        <li>Security</li>
-        <li>Privacy</li>
-        <li>Site map</li>
-      </ul>
-    </div>
-  </div>
-
-  <hr class="border-gray-700 mt-5"/>
-</div>
-
-
-
-
-    </body>
-
+        <hr>
+        <div class="text-center">
+            <p>Made with ❤️ in India</p>
+        </div>
+    </footer>
+</body>
 </html>
