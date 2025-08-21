@@ -12,20 +12,34 @@
 </head>
 
 <body>
+    <!-- ======================================= -->
+    <!-- === NEW HEADER STRUCTURE STARTS === -->
+    <!-- ======================================= -->
     <header>
         <div class="container-one">
-            <div class="flex-items">
-                <img src="./images/logo-img.jpeg" alt="Flipkart Logo" class="logo-img">
-                <div class="logo__inputbox">
-                    <input type="text" placeholder="Search for Products, Brands and More">
-                    <svg class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            <!-- Left side: Hamburger Menu and Logo -->
+            <div class="header-left">
+                <a href="#" class="hamburger-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
-                </div>
+                </a>
+                <a href="#" class="header-logo">
+                    <img src="./images/logo-img.jpeg" alt="Flipkart Logo" class="logo-img">
+                </a>
             </div>
 
-            <nav>
+            <!-- This search bar is ONLY for desktop view -->
+            <div class="header-search-desktop">
+                <input type="text" placeholder="Search for Products, Brands and More">
+                <svg class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+
+            <!-- Right side: Navigation Icons -->
+            <nav class="header-nav">
                 <a href="#" class="login">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -42,17 +56,27 @@
                     </svg>
                     <span>Cart</span>
                 </a>
-                <a href="#" class="login">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 003.75.614M6.75 18h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .414.336.75.75.75z" />
-                    </svg>
+                <a href="#" class="login desktop-only-nav">
                     <span>Become a Seller</span>
                 </a>
             </nav>
         </div>
     </header>
+    <!-- ======================================= -->
+    <!-- === NEW HEADER STRUCTURE ENDS === -->
+    <!-- ======================================= -->
+
+    <!-- This search bar is ONLY for mobile view -->
+    <div class="mobile-search-container">
+        <div class="mobile-search-bar">
+            <svg class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="text" placeholder="Search for Products, Brands and More">
+        </div>
+    </div>
+
 
     <main class="main-content">
         <div class="items">
@@ -102,8 +126,8 @@
             </div>
         </div>
 
-        <div class="image-section">
-            <img src="./images/banner-img.webp" alt="banner-img" class="banner-img">
+        <div class="image-section main-banner">
+            <img src="./images/main-img.webp" alt="banner-img">
         </div>
 
         <div class="product-section">
@@ -123,7 +147,8 @@
                     <p class="product-price">From ₹17,999</p>
                 </div>
                 <div class="product-card">
-                    <img src="./images/phone-3.webp" alt="Vivo T4 x 5G smartphone, different color" class="product-card-img">
+                    <img src="./images/phone-3.webp" alt="Vivo T4 x 5G smartphone, different color"
+                        class="product-card-img">
                     <p class="product-title">Vivo T4 x 5G</p>
                     <p class="product-price">From ₹13,499</p>
                 </div>
@@ -133,7 +158,8 @@
                     <p class="product-price">From ₹13,499</p>
                 </div>
                 <div class="product-card">
-                    <img src="./images/phone-5.webp" alt="Moto G84 5G smartphone, different color" class="product-card-img">
+                    <img src="./images/phone-5.webp" alt="Moto G84 5G smartphone, different color"
+                        class="product-card-img">
                     <p class="product-title">Moto G84 5G</p>
                     <p class="product-price">From ₹17,999</p>
                 </div>
@@ -152,16 +178,14 @@
             <img src="./images/image-section-img4.webp" alt="image1">
         </div>
 
-        <div class="image-section responsive-grid grid-3-col">
+        <div class="image-section responsive-grid grid-2-col">
             <img src="./images/image-section2.webp" alt="image1">
             <img src="./images/image-section2-two.webp" alt="image1">
-            <img src="./images/image-section2-three.webp" alt="image1">
         </div>
 
-        <div class="image-section responsive-grid grid-3-col">
+        <div class="image-section responsive-grid grid-2-col">
             <img src="./images/feautured-img1.webp" alt="image1">
             <img src="./images/feautured-img2.webp" alt="image1">
-            <img src="./images/feautured-img3.webp" alt="image1">
         </div>
 
         <div class="product-section categories">
@@ -228,10 +252,6 @@
             </div>
         </div>
 
-        <div class="image-section flight-image">
-            <img src="./images/flight-image.webp" alt="flightimage">
-        </div>
-
         <div class="image-section responsive-grid grid-4-col">
             <img src="./images/offerimg-1.webp" alt="image1">
             <img src="./images/offerimg-2.webp" alt="image1">
@@ -239,10 +259,9 @@
             <img src="./images/offerimg-4.webp" alt="image1">
         </div>
 
-        <div class="image-section responsive-grid grid-3-col">
+        <div class="image-section responsive-grid grid-2-col">
             <img src="./images/offerimg-5.webp" alt="image1">
             <img src="./images/offerimg-6.webp" alt="image1">
-            <img src="./images/offerimg-7.webp" alt="image1">
         </div>
 
         <div class="product-section furniture">
@@ -272,16 +291,14 @@
             </div>
         </div>
 
-        <div class="image-section responsive-grid grid-3-col">
+        <div class="image-section responsive-grid grid-2-col">
             <img src="./images/blue-img1.webp" alt="images">
             <img src="./images/blue-img2.webp" alt="images">
-            <img src="./images/blue-img3.webp" alt="images">
         </div>
 
-        <div class="image-section responsive-grid grid-3-col">
+        <div class="image-section responsive-grid grid-2-col">
             <img src="./images/brand-img1.webp" alt="images">
             <img src="./images/brand-img2.webp" alt="images">
-            <img src="./images/brand-img3.webp" alt="images">
         </div>
     </main>
 
@@ -328,9 +345,9 @@
         </div>
         <hr>
         <div class="text-center">
-            <p>Made with ❤️ in India</p>
+            <p>@ 2022-2027 Flipcart.com</p>
         </div>
     </footer>
-</body>    
+</body>
 
 </html>
